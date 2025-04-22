@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelVault</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+    
+  </style>
+  
+</head>
+<body class="bg-black min-h-screen relative">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="back.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Sticky Navbar -->
+  <header class="bg-black bg-opacity-90 px-8 py-4 flex justify-between items-center sticky top-0 z-50">
+    <div class="text-white text-2xl font-bold">PixelVault</div>
+    <nav>
+      <ul class="flex space-x-4 font-semibold items-center">
+        <li><a href="#" class="text-white hover:text-blue-800 hover:p-2 hover:bg-gray-100 hover:border rounded-lg">Home</a></li>
+        <li><a href="login.html" class="text-white hover:text-blue-800 hover:p-2 hover:bg-gray-100 hover:border rounded-lg">Sign In</a></li>
+        <li><a href="signup.html" class="text-white hover:text-blue-800 hover:p-2 hover:bg-gray-100 hover:border rounded-lg bg-blue-900 p-2">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex min-h-screen justify-center relative z-10">
+    <section class = "p-10 m-10 bg-black bg-opacity-60 rounded-lg shadow-lg text-center">
+        <h1 class = "flex text-blue-300 font-bold text-4xl mb-4 justify-center">Your Pixel Library</h1>
+        <div class = "flex flex-row gap-4 mt-8">
+            <div class = "w-64 h-64 rounded-xl bg-blue-800 font-bold text-blue-300 text-8xl flex justify-center items-center">
+                <button><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class = "w-64 h-64 rounded-xl bg-blue-800"></div>
+            <div class = "w-64 h-64 rounded-xl bg-blue-800"></div>
+        </div>
+
+    </section>
+  </main>
+
+
+
+</body>
+</html>
